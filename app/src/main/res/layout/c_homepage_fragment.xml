@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cvnavi.logistics.i51eyun.eh.widget.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/refresh_head" />
+
+    <com.cvnavi.logistics.i51eyun.eh.widget.pullableview.PullableScrollView
+        android:id="@+id/homaPege_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F4F7"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="预留" />
+            </LinearLayout>
+
+            <com.cvnavi.logistics.i51eyun.eh.widget.gridview.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="0.0dip"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.0dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                  <com.cvnavi.logistics.i51eyun.eh.widget.ImageCycleView
+                    android:id="@+id/ac_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+
+                    <LinearLayout
+                        android:id="@+id/dotLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:orientation="horizontal" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/line" />
+
+                    <TextView
+                        android:id="@+id/order_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="我的运单" />
+                </LinearLayout>
+
+                <com.cvnavi.logistics.i51eyun.eh.widget.listview.MyListView
+                    android:id="@+id/content_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/empty_list_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="暂无数据！"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.cvnavi.logistics.i51eyun.eh.widget.pullableview.PullableScrollView>
+
+    <include layout="@layout/load_more" />
+
+</com.cvnavi.logistics.i51eyun.eh.widget.PullToRefreshLayout>

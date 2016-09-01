@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">e货</string>
+
+    <string-array name="plantes">
+        <item>车主</item>
+        <item>货主</item>
+    </string-array>
+
+    <string name="i_agree">我同意</string>
+    <string name="agreement">《e货APP使用服务协议》</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="layout_width">0dp</string>
+    <string name="layout_height">40dp</string>
+    <string name="I_want_to_register">开始接单</string>
+    <string name="supply">我要找货</string>
+    <string name="The_order_list">运单列表</string>
+    <string name="My_order">我的运单</string>
+    <string name="me">我</string>
+    <string name="I_want_to_order">我要接单</string>
+    <string name="Home_page">首\t页</string>
+ <!--    <string name="pull_to_refresh">下拉刷新</string> -->
+    <!-- <string name="Home_page">首页</string> -->
+
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 司机 -->
+    <string name="driver_info_manage">个人信息管理</string>
+    
+     <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    
+    
+    
+    
+    
+    
+    
+
+</resources>

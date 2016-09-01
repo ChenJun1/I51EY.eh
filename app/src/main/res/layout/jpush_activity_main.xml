@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RegistrationID:"
+            android:textIsSelectable="true"
+            />
+        <TextView 
+            android:id="@+id/registrationId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"/>
+    </LinearLayout>
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="AppKey:"
+           android:textIsSelectable="true"/>
+       <TextView 
+           android:id="@+id/appKey"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textIsSelectable="true"/>
+   </LinearLayout>
+    <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="IMEI:"
+           android:textIsSelectable="true"/>
+       <TextView 
+           android:id="@+id/imei"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textIsSelectable="true"/>
+   </LinearLayout>
+    <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="DeviceId:"
+           android:textIsSelectable="true"/>
+       <TextView 
+           android:id="@+id/deviceid"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textIsSelectable="true"/>
+   </LinearLayout>
+    <TextView
+        android:id="@+id/msgText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" 
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textIsSelectable="true"/>
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="消息"
+           />
+    <ToggleButton
+        android:id="@+id/mTogBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/checkbox_iphone"
+        android:checked="true"
+        android:text=" "
+        android:textOff=""
+        android:textOn="" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Tag :" />
+
+        <EditText
+            android:id="@+id/et_tag"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:hint="Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔"/>
+
+        <Button
+            android:id="@+id/bt_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置Tag  "
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alias:" />
+
+        <EditText
+            android:id="@+id/et_alias"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:textColor="#000000"
+            android:textSize="15sp" 
+            android:hint="Alias为大小写字母，数字，下划线"/>
+
+        <Button
+            android:id="@+id/bt_alias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置Alias"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

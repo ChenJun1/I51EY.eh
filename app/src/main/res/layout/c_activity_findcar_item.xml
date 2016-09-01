@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/c_personal_information_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/c_car_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/c_car_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+            <TextView
+                android:id="@+id/c_car_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+            <TextView
+                android:id="@+id/c_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_car_information_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/c_car_tel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#7F7C77"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/c_driver_Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#7F7C77"
+                android:textSize="13sp"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+            <ImageView
+                android:id="@+id/c_car_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_car_information_layout_f"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/c_car_tel_f"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#7F7C77"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/c_driver_Name_f"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#7F7C77"
+                android:textSize="13sp"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+
+            <ImageView
+                android:id="@+id/c_car_status_f"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:ignore="ObsoleteLayoutParam,HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

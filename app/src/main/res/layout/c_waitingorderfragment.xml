@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F7"
+    android:gravity="center"
+    android:orientation="vertical" >
+	
+    
+    <com.cvnavi.logistics.i51eyun.eh.widget.PullToRefreshLayout
+        android:id="@+id/c_refresh_waiting_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.cvnavi.logistics.i51eyun.eh.widget.pullableview.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.cvnavi.logistics.i51eyun.eh.widget.listview.MyListView
+                    android:id="@+id/c_waiting_order_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:divider="@color/gray"
+                    android:dividerHeight="1dp" />
+
+                <TextView
+                    android:id="@+id/empty_list_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="暂无数据！"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.cvnavi.logistics.i51eyun.eh.widget.pullableview.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.cvnavi.logistics.i51eyun.eh.widget.PullToRefreshLayout>
+    
+    <!-- <org.pulltorefreshandload.PullToRefreshLayout
+        android:id="@+id/c_refresh_waiting_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <org.pulltorefreshandload.pullableview.PullableListView
+            android:id="@+id/c_waiting_order_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/load_more" />
+    </org.pulltorefreshandload.PullToRefreshLayout> -->
+
+</LinearLayout>

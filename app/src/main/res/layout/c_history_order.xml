@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4.5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="下单时间："
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/c_FindStartTime_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="请选择"
+            android:textSize="12sp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="至"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/c_FindEndTime_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:focusable="false"
+            android:hint="请选择"
+            android:textSize="12sp"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F4F4F8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4.5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="路        线："
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/c_Shipping_City_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:focusable="false"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:hint="请选择"
+            android:textSize="13sp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="至"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/c_Consignee_City_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:focusable="false"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:hint="请选择"
+            android:textSize="13sp"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F4F4F8" />
+
+    <Button
+        android:id="@+id/c_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="45dip"
+        android:layout_marginRight="45dip"
+        android:layout_marginTop="10dip"
+        android:background="#22C65B"
+        android:text="查   询"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F4F4F8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/line"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="我的历史运单 "
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+	
+     <com.cvnavi.logistics.i51eyun.eh.widget.PullToRefreshLayout
+        android:id="@+id/c_refresh_history_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.cvnavi.logistics.i51eyun.eh.widget.pullableview.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.cvnavi.logistics.i51eyun.eh.widget.listview.MyListView
+                    android:id="@+id/c_historyorde_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:divider="@color/gray"
+                    android:dividerHeight="1dp" />
+
+                <TextView
+                    android:id="@+id/empty_list_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="暂无数据！"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.cvnavi.logistics.i51eyun.eh.widget.pullableview.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.cvnavi.logistics.i51eyun.eh.widget.PullToRefreshLayout>
+    <!-- <org.pulltorefreshandload.PullToRefreshLayout
+        android:id="@+id/c_refresh_history_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <org.pulltorefreshandload.pullableview.PullableListView
+            android:id="@+id/c_historyorder_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+		
+        <include layout="@layout/load_more" />
+    </org.pulltorefreshandload.PullToRefreshLayout> -->
+
+</LinearLayout>

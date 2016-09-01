@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F8"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="26dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/name_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/rounded_editext_for_fahuo"
+                            android:hint="姓名"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/phone_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/rounded_editext_for_fahuo"
+                            android:hint="电话"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/id_number_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/rounded_editext_for_fahuo"
+                    android:gravity="center_vertical"
+                    android:hint="输入身份证号码"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/choose_drive_type_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/rounded_editext_for_fahuo"
+                    android:drawableRight="@drawable/black_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:text="请选择您的驾照类型"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/choose_been_driving_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/rounded_editext_for_fahuo"
+                    android:drawableRight="@drawable/black_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:text="请选择您的驾龄"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/choose_pack_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/rounded_editext_for_fahuo"
+                    android:drawableRight="@drawable/black_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:text="请选择车辆挂靠的物流区"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="17dp"
+                android:background="#E0E0E1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp" >
+
+                <EditText
+                    android:id="@+id/bank_number_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="输入银行卡号"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E1" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/rounded_button_for_next"
+                android:text="下一步"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
